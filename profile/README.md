@@ -3,6 +3,8 @@ The da Vinci Research Kit (**dVRK**) is an “open-source mechatronics” system
 The dVRK documentation is hosted on the :point_right: [sawIntuitiveResearchKit Wiki](https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki) :point_left:.  Please check the build instructions in the Wiki before cloning any repository.  The build instructions show how to use `wstool` or `vcs` to pull all the repositories you might need for ROS 1 or ROS 2.
 
 Repositories:
-* **dVRK**: [sawIntuitiveResearchKit](https://github.com/jhu-dvrk/sawIntuitiveResearchKit) Main repository for the dVRK.  This code depends on the *cisst* libraries but doesn't require ROS.
-* **ROS 1**: [dvrk-ros](https://github.com/jhu-dvrk/dvrk-ros): Single repository containing ROS nodes for the dVRK, configuration files (URDF and CAD), Python and Matlab clients API over ROS, examples...
-* **ROS 2**:  The code is split across multiple repositories.  [ros2_dvrk_robot](https://github.com/jhu-dvrk/ros2_dvrk_robot): ROS node for the dVRK.  [ros2_dvrk_model](https://github.com/jhu-dvrk/ros2_dvrk_model): configuration files (URDF and CAD).  [ros2_dvrk_python](https://github.com/jhu-dvrk/ros2_dvrk_model): Python client API over ROS
+* **dVRK**: [sawIntuitiveResearchKit](https://github.com/jhu-dvrk/sawIntuitiveResearchKit) Main repository for the dVRK.  This code depends on the *cisst* libraries.  It also includes the main ROS nodes for the dVRK (ROS1 and ROS2)
+* **ROS**:  Extra ROS features are provided across multiple repositories.
+  * [dvrk_model](https://github.com/jhu-dvrk/dvrk_model): configuration files (URDF and CAD)
+  * [dvrk_VIDEO](https://github.com/jhu-dvrk/dvrk_VIDEO): launch files for the video pipeline
+  * [dvrk_python](https://github.com/jhu-dvrk/dvrk_python): Python client API over ROS
